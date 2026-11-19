@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Thenlot</title>
+  <meta name="description" content="Portfolio de Thenlot Yan : compétences, stages et projets informatiques.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      var theme = 'light';
+      try {
+        theme = localStorage.getItem('theme') ||
+          (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      } catch (e) {}
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="javascript/script.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="logo notranslate" translate="no" href="#accueil">Thenlot Yan</a>
+    <nav id="menu" class="menu">
+      <a href="#accueil">Accueil</a>
+      <a href="#apropos">À propos</a>
+      <a href="#competences">Compétences</a>
+      <a href="#stages">Stages</a>
+      <a href="#projets">Projets</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="tools notranslate" translate="no">
+      <div class="lang" role="group" aria-label="Langue">
+        <button type="button" data-lang="fr" aria-label="Français" title="Français"><img src="img/france.png" alt="" width="24" height="24"></button>
+        <button type="button" data-lang="en" aria-label="English" title="English"><img src="img/etats-unis.png" alt="" width="24" height="24"></button>
+        <button type="button" data-lang="de" aria-label="Deutsch" title="Deutsch"><img src="img/allemagne.svg" alt="" width="24" height="24"></button>
+      </div>
+      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Changer de thème" title="Mode clair / sombre"></button>
+      <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu">Menu</button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ACCUEIL -->
+    <section id="accueil" class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="hero-hello">Bonjour, je m'appelle</p>
+          <h1 class="notranslate" translate="no">Thenlot Yan</h1>
+          <p class="hero-role">Étudiant en informatique et réseaux, à la recherche d'un stage.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#projets">Voir mes projets</a>
+            <a class="btn btn-ghost" href="#contact">Me contacter</a>
+            <a class="btn btn-ghost" href="pdf/CV_Stage_Thenlot_Yan_Ingenieur_2027.pdf" download="CV-Thenlot.pdf">Télécharger mon CV</a>
+          </div>
+        </div>
+        <div class="hero-photo">
+<<<<<<< HEAD
+=======
+          <!-- Remplace par ta photo : place-la dans img/photo.jpg -->
+>>>>>>> fbd321d9faf1a58a18dce282fe163b15ae790d0d
+          <img src="img/Profile.png" alt="Portrait de Thenlot" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'photo-fallback',textContent:'T'}))">
+        </div>
+      </div>
+    </section>
+
+    <!-- À PROPOS -->
+    <section id="apropos" class="section">
+      <div class="wrap narrow">
+        <h2>Qui suis-je ?</h2>
+        <p>Je suis étudiant à <strong>L’école nationale supérieure d'ingénieurs Sud-Alsace</strong> et passionné par <strong>Les mathématiques, les Intelligence Artificielle et les Jeux</strong>.</p>
+        <p>Je recherche actuellement un stage de <strong>4 mois</strong> à partir de <strong>début mai</strong>. En dehors des cours, je développe des projets personnels dont le code est disponible sur <a href="https://github.com/Thenlot">mon GitHub</a>.</p>
+      </div>
+    </section>
+
+    <!-- COMPÉTENCES -->
+    <section id="competences" class="section section-alt">
+      <div class="wrap">
+        <h2>Mes compétences</h2>
+
+        <div class="skills">
+          <div class="skill-group">
+            <h3>Langages</h3>
+            <ul class="tiles">
+            <li><img src="img/C.svg" alt="" width="56" height="56" loading="lazy"><span class="notranslate" translate="no">C</span></li>
+            <li><img src="img/Cpp.svg" alt="" width="56" height="56" loading="lazy"><span class="notranslate" translate="no">C++</span></li>
+            <li><img src="img/C_sharp.svg" alt="" width="56" height="56" loading="lazy"><span class="notranslate" translate="no">C#</span></li>
+            <li><img src="img/Python.svg" alt="" width="56" height="56" loading="lazy"><span class="notranslate" translate="no">Python</span></li>
+            <li><img src="img/Html.svg" alt="" width="56" height="56" loading="lazy"><span class="notranslate" translate="no">HTML</span></li>
+            <li><img src="img/Css.svg" alt="" width="56" height="56" loading="lazy"><span class="notranslate" translate="no">CSS</span></li>
+            <li><img src="img/JavaScript.svg" alt="" width="56" height="56" loading="lazy"><span class="notranslate" translate="no">JavaScript</span></li>
+            <li><img src="img/Sql.svg" alt="" width="56" height="56" loading="lazy"><span class="notranslate" translate="no">SQL</span></li>
+            <li><img src="img/java.png" alt="" width="56" height="56" loading="lazy"><span class="notranslate" translate="no">Java</span></li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Outils et technologies</h3>
+            <ul class="tiles">
+            <li><img src="img/Git.svg" alt="" width="56" height="56" loading="lazy"><span class="notranslate" translate="no">Git</span></li>
+            <li><img src="img/Arduino.svg" alt="" width="56" height="56" loading="lazy"><span class="notranslate" translate="no">Arduino</span></li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Savoir-être</h3>
+            <ul class="chips">
+              <li>Travail en équipe</li><li>Autonomie</li><li>Curiosité</li><li>Rigueur</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STAGES -->
+    <section id="stages" class="section">
+      <div class="wrap narrow">
+        <h2>Mes stages</h2>
+
+        <ol class="timeline">
+          <li>
+<<<<<<< HEAD
+            <p class="when">Juillet 2026 à Aout 2026</p>
+=======
+            <p class="when">juillet 2026 à aout 2026</p>
+>>>>>>> fbd321d9faf1a58a18dce282fe163b15ae790d0d
+            <h3>Informaticien · Mairie de Chevigny-Saint-Sauveur</h3>
+            <p>Support technique et maintenance informatique. création de programme visant àfaciliter le travail des agents de la mairie.</p>
+            <p class="stack">Technologies : Python, Powershell, C++</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- PROJETS -->
+    <section id="projets" class="section section-alt">
+      <div class="wrap">
+        <h2>Quelques-uns de mes projets</h2>
+
+        <div class="projects">
+          <article class="project">
+            <h3>Checker</h3>
+            <p>Un outil de monitoring qui permet de suivre l'état de plusieurs machines informatiques. ce projets a été initié lors de mons stage à la mairie de Chevigny-Saint-Sauveur et je travaille à faire une version open source</p>
+            <p class="stack">C++, HTML, CSS, JavaScript</p>
+            <p class="stack">Statut : En cours, privé</p>
+            <a href="checker.html">En savoir plus</a>
+          </article>
+
+
+          <article class="project">
+            <h3>Mon portfolio</h3>
+            <p>Le site que vous êtes en train de lire, publié avec GitHub Pages et adapté aux mobiles.</p>
+            <p class="stack">HTML, CSS, JavaScript</p>
+<<<<<<< HEAD
+            <p class="stack">Statut : En cours, public</p>
+=======
+>>>>>>> fbd321d9faf1a58a18dce282fe163b15ae790d0d
+            <a href="https://github.com/Thenlot/Thenlot.github.io">Voir le code</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="wrap narrow">
+        <h2>Me contacter</h2>
+        <p>Un stage, une question ou un projet ? Écris-moi, je réponds rapidement.</p>
+        <ul class="contact-list">
+          <li><a href="tel:+33602068381">+33 6 02 06 83 81</a></li>
+          <li><a href="mailto:yan.thenlot@uha.fr">yan.thenlot@uha.fr</a></li>
+          <li><a href="https://github.com/Thenlot">GitHub : Thenlot</a></li>
+          <li><a href="https://www.linkedin.com/in/yan-thenlot-1900bb385/">LinkedIn</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Thenlot Yan</p>
+  </footer>
+
+  <div id="google_translate_element" class="gt-box"></div>
+
+</body>
+</html>

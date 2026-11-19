@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checker | Thenlot Yan</title>
+  <meta name="description" content="Checker : un outil de supervision de machines informatiques, créé pendant un stage à la mairie de Chevigny-Saint-Sauveur.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      var theme = 'light';
+      try {
+        theme = localStorage.getItem('theme') ||
+          (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      } catch (e) {}
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="javascript/script.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="logo notranslate" translate="no" href="index.html#accueil">Thenlot Yan</a>
+    <nav id="menu" class="menu">
+      <a href="index.html#accueil">Accueil</a>
+      <a href="index.html#apropos">À propos</a>
+      <a href="index.html#competences">Compétences</a>
+      <a href="index.html#stages">Stages</a>
+      <a class="active" href="index.html#projets" aria-current="page">Projets</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <div class="tools notranslate" translate="no">
+      <div class="lang" role="group" aria-label="Langue">
+        <button type="button" data-lang="fr" aria-label="Français" title="Français"><img src="img/france.png" alt="" width="24" height="24"></button>
+        <button type="button" data-lang="en" aria-label="English" title="English"><img src="img/etats-unis.png" alt="" width="24" height="24"></button>
+        <button type="button" data-lang="de" aria-label="Deutsch" title="Deutsch"><img src="img/allemagne.svg" alt="" width="24" height="24"></button>
+      </div>
+      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Changer de thème" title="Mode clair / sombre"></button>
+      <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu">Menu</button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- EN-TÊTE DU PROJET -->
+    <section class="page-head">
+      <div class="wrap narrow">
+        <a class="back" href="index.html#projets">← Retour aux projets</a>
+        <h1 class="notranslate" translate="no">Checker</h1>
+        <p class="lead">Un outil de supervision qui permet de suivre l'état de plusieurs machines informatiques.</p>
+
+        <ul class="facts">
+          <li><span class="label">Statut</span>En cours</li>
+          <li><span class="label">Contexte</span>Stage à la mairie de Chevigny-Saint-Sauveur</li>
+<<<<<<< HEAD
+          <li><span class="label">Technologies</span><span class="notranslate" translate="no">C++, HTML, CSS, JavaScript</span></li>        </ul>
+=======
+          <li><span class="label">Technologies</span><span class="notranslate" translate="no">C++, HTML, CSS, JavaScript</span></li>
+          <li><span class="label">Mon rôle</span>[Seul / en équipe : précise ce que tu as fait]</li>
+        </ul>
+>>>>>>> fbd321d9faf1a58a18dce282fe163b15ae790d0d
+
+        <p class="page-actions">
+          <a class="btn" href="https://github.com/Thenlot">Voir le code sur GitHub</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTENU -->
+    <section class="section prose">
+      <div class="wrap narrow">
+
+        <h2>Pourquoi ce projet ?</h2>
+        <p>Checker est né pendant mon stage à la mairie de Chevigny-Saint-Sauveur, où je faisais du support technique et de la maintenance informatique. Il fallait pouvoir suivre facilement l'état de plusieurs machines, sans avoir à les vérifier une par une.</p>
+        <p>[Ajoute ici le problème concret : combien de machines, ce qui se passait avant Checker, ce qui prenait du temps aux agents.]</p>
+
+        <h2>Ce que fait Checker</h2>
+        <ul>
+          <li>Envoi de ping régulier sur des machines afin de vérifier leur état</li>
+          <li>Envoi automatique de mails de notification en cas de problème sur une machine</li>
+          <li>Sécurité des données accrues</li>
+        </ul>
+
+        <figure class="shot">
+          <img src="img/checker1.png" alt="Capture d'écran de Checker"
+               onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'shot-missing',textContent:'Capture d\u2019écran à ajouter : img/checker-1.png'}))">
+          <figcaption>Un exemple simplifier d'un site vérifier à l'aide de Checker</figcaption>
+        </figure>
+
+        <h2>Comment ça marche</h2>
+        <p>Checker fonctionne en envoyant des requêtes de ping régulières aux machines à surveiller. Si une machine ne répond pas, un message d'alerte est envoyé par email.</p>
+
+        <h2>Les difficultés rencontrées</h2>
+        <ul>
+          <li>La sécurité des données → [comment tu l'as résolue]</li>
+          <li>[Difficulté 2] → [comment tu l'as résolue]</li>
+        </ul>
+
+        <h2>Ce que j'ai appris</h2>
+        <p>[Ce que ce projet t'a appris : un langage, un outil, une façon de travailler avec des utilisateurs réels, etc.]</p>
+
+        <h2>Et maintenant ?</h2>
+        <p>Je travaille à une version open source de Checker, utilisable en dehors de la mairie. [Précise les prochaines étapes : ce qui reste à faire, ce que tu veux ajouter.]</p>
+
+        <p class="page-actions">
+          <a class="btn" href="https://github.com/Thenlot">Voir le code sur GitHub</a>
+          <a class="btn btn-ghost" href="index.html#projets">Retour aux projets</a>
+        </p>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Thenlot</p>
+  </footer>
+
+  <div id="google_translate_element" class="gt-box"></div>
+
+</body>
+</html>
