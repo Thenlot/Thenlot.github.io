@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Krojanty</title>
+  <meta name="description" content="Krojanty : un jeu de plateau dont l'objectif est de manger le roi adverse, créé lors de mon immersion de première année à l'ENSISA.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      var theme = 'light';
+      try {
+        theme = localStorage.getItem('theme') ||
+          (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      } catch (e) {}
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="javascript/script.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="logo notranslate" translate="no" href="index.html#accueil">Thenlot Yan</a>
+    <nav id="menu" class="menu">
+      <a href="index.html#accueil">Accueil</a>
+      <a href="index.html#apropos">À propos</a>
+      <a href="index.html#competences">Compétences</a>
+      <a href="index.html#stages">Stages</a>
+      <a class="active" href="index.html#projets" aria-current="page">Projets</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <div class="tools notranslate" translate="no">
+      <div class="lang" role="group" aria-label="Langue">
+        <button type="button" data-lang="fr" aria-label="Français" title="Français"><img src="img/france.png" alt="" width="24" height="24"></button>
+        <button type="button" data-lang="en" aria-label="English" title="English"><img src="img/etats-unis.png" alt="" width="24" height="24"></button>
+        <button type="button" data-lang="de" aria-label="Deutsch" title="Deutsch"><img src="img/allemagne.svg" alt="" width="24" height="24"></button>
+      </div>
+      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Changer de thème" title="Mode clair / sombre"></button>
+      <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu">Menu</button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- EN-TÊTE DU PROJET -->
+    <section class="page-head">
+      <div class="wrap narrow">
+        <a class="back" href="index.html#projets">← Retour aux projets</a>
+        <h1 class="notranslate" translate="no">Krojanty</h1>
+        <p class="lead">Un jeu de plateau dont l'objectif est de manger le roi adverse.</p>
+
+        <ul class="facts">
+          <li><span class="label">Statut</span>Terminé</li>
+          <li><span class="label">Contexte</span>Immersion de première année à l'ENSISA</li>
+          <li><span class="label">Technologies</span><span class="notranslate" translate="no">C, TortoiseSVN </span></li>
+        </ul>
+
+        <p class="page-actions">
+          <a class="btn" href="https://github.com/Thenlot">Voir le code sur GitHub</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTENU -->
+    <section class="section prose">
+      <div class="wrap narrow">
+
+        <h2>Pourquoi ce projet ?</h2>
+        <p>Krojanty est né pendant mon immersion à l'ENSISA, où je faisais du développement de jeux de plateau. Il fallait créer un jeu original et stratégique.</p>
+        <p>Exemple : un joueur doit manger le roi adverse pour gagner. Krojanty permet de jouer à ce jeu en ligne.</p>
+
+        <h2>Ce que fait Krojanty</h2>
+        <ul>
+          <li>Permet de jouer à un jeu de plateau stratégique</li>
+          <li>Envoi automatique de mails de notification en cas de problème sur une machine</li>
+          <li>Sécurité des données accrues</li>
+        </ul>
+
+        <figure class="shot">
+          <img src="img/krojanty1.png" alt="Capture d'écran de Krojanty"
+               onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'shot-missing',textContent:'Capture d\u2019écran à ajouter : img/krojanty-1.png'}))">
+          <figcaption>Un exemple simplifier d'un site vérifier à l'aide de Krojanty</figcaption>
+        </figure>
+
+        <h2>Comment ça marche</h2>
+        <p>Krojanty fonctionne en permettant aux joueurs de jouer à distance. Les règles du jeu sont implémentées dans l'application, et les mouvements des pièces sont synchronisés en temps réel.</p>
+
+        <h2>Les difficultés rencontrées</h2>
+        <ul>
+          <li>La conception du jeu → Développement de règles équilibrées et engaging</li>
+          <li>Le développement web → Création d'une interface utilisateur intuitive et réactive</li>
+        </ul>
+
+        <h2>Ce que j'ai appris</h2>
+        <p>Ce projet m'a appris à concevoir une application web complète, en gérant à la fois le côté client et serveur. J'ai également développé des compétences en matière de sécurité des données et d'optimisation des performances. Cela m'a permis d'apprendre le langage de programmation C++ et les principes de développement web avec l'aide de la bibliothèque httplib.</p>
+    
+        <h2>Réalisé en équipe</h2>
+        <p>Ce projet a été réalisé en collaboration avec :</p>
+        <ul class="team notranslate" translate="no">
+            <li><strong>Sofiane Bouguerri</strong><a href="mailto:sofiane.bouguerri@uha.fr">sofiane.bouguerri@uha.fr</a></li>
+            <li><strong>Hadil Abahmane</strong><a href="mailto:hadil.abahmane@uha.fr">hadil.abahmane@uha.fr</a></li>
+            <li><strong>Kylian Adam</strong><a href="mailto:kylian.adam@uha.fr">kylian.adam@uha.fr</a></li>
+            <li><strong>Baptiste Garnier</strong><a href="mailto:baptiste.garnier@uha.fr">baptiste.garnier@uha.fr</a></li>
+            <li><strong>Mael Lefebvre</strong><a href="mailto:mael.lefebvre@uha.fr">mael.lefebvre@uha.fr</a></li>
+            <li><strong>Becker Obie-Obolo</strong><a href="mailto:becker.obie-obolo@uha.fr">becker.obie-obolo@uha.fr</a></li>
+            <li><strong>Yan Thenlot</strong><a href="mailto:yan.thenlot@uha.fr">yan.thenlot@uha.fr</a></li>
+        </ul>
+       
+        <h2>Et maintenant ?</h2>
+        <p>Je travaille à une version open source de Krojanty, utilisable en dehors de l'ENSISA.</p>
+
+        <p class="page-actions">
+          <a class="btn" href="https://github.com/Thenlot">Voir le code sur GitHub</a>
+          <a class="btn btn-ghost" href="index.html#projets">Retour aux projets</a>
+        </p>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Thenlot</p>
+  </footer>
+
+  <div id="google_translate_element" class="gt-box"></div>
+
+</body>
+</html>

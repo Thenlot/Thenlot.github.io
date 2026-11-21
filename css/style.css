@@ -272,11 +272,17 @@ body { top: 0 !important; }
 
 .stack { color: var(--ink-soft); font-size: 1rem; }
 
-/* Projets */
+/* Projets : 2 colonnes ; si le nombre de projets est impair,
+   le premier est seul en haut, centré, puis les autres vont par deux */
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.5rem;
+}
+.projects > .project:first-child:nth-last-child(odd) {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: calc(50% - 0.75rem);
 }
 .project {
   display: flex;
@@ -288,8 +294,9 @@ body { top: 0 !important; }
 }
 .project h3 { font-size: 1.4rem; }
 .project p { margin: 0 0 0.8rem; }
-.project .stack { margin-top: auto; }
-.project a { font-weight: 600; }
+.project p.stack { margin: 0 0 0.3rem; }
+/* Le lien reste toujours en bas de la carte, quelle que soit la longueur du texte */
+.project > a:last-child { margin-top: auto; padding-top: 0.8rem; font-weight: 600; }
 
 /* Contact */
 .contact-list { list-style: none; margin: 1.5rem 0 0; padding: 0; display: grid; gap: 0.5rem; }
@@ -369,9 +376,30 @@ body { top: 0 !important; }
   .menu.open { display: flex; }
   .menu a { padding: 0.7rem 0; }
   .hero-grid { grid-template-columns: 1fr; }
+  .projects { grid-template-columns: 1fr; }
+  .projects > .project:first-child:nth-last-child(odd) { width: 100%; }
   .hero-photo { order: -1; width: min(220px, 60vw); justify-self: start; }
 }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+
+.prose .team {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 0.8rem;
+}
+.prose .team li {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0.8rem 1.1rem;
+  background: var(--paper-alt);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow-wrap: anywhere;
+}
+.team a { font-size: 0.95rem; }
